@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rock Paper Scissors</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik"
+      rel="stylesheet"
+    />
+    <script src="script.js" async defer></script>
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="content">
+      <div class="playerContainer">
+        <p id="playerHeaderText">Take your pick</p>
+        <div class="playerContainerButtons">
+          <img id="playerRockBtn" src="/img/rock.png" />
+          <img id="playerPaperBtn" src="/img/paper.png" />
+          <img id="playerScissorsBtn" src="/img/scissors.png" />
+        </div>
+      </div>
+
+      <div class="scoreboardContainer">
+        <div class="scoreContainer">
+          <div class="btncontainer">
+            <h2>Player</h2>
+            <div class="btn" id="showPlayerScore">0</div>
+          </div>
+          <div id="roundCounter">
+            <div id="roundDisplay">
+              <p>Round</p>
+              <p id="roundLog">0</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="btncontainer">
+            <h2>Com</h2>
+            <div class="btn" id="showComScore">0</div>
+          </div>
+        </div>
+
+        <label id="gameLog"></label>
+
+        <button id="resetBtn" type="reset">Restart</button>
+      </div>
+
+      <div class="comContainer">
+        <p id="comHeaderText">Computer : <label id="comPick"></label></p>
+        <div class="comContainerButtons">
+          <img id="comRockBtn" src="/img/rock.png" />
+          <img id="comPaperBtn" src="/img/paper.png" />
+          <img id="comScissorsBtn" src="/img/scissors.png" />
+        </div>
+      </div>
+    </div>
+
+    <p style="text-transform: none; color: rgba(0, 0, 0, 0.747)" id="rules">
+      <span style="color: rgb(179, 39, 39)">Rule: </span>Score "5" first, wins
+      the game.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: uppercase; 
+  text-align: center;
+  font-family: rubik;
+  font-family: "rubik", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-color: #4385ef;
+  padding: 10px 90px 15px 90px;
+  border-radius: 15px;
+  color: #2a446e;
+  width: 620px;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 2em;
+  box-shadow: inset 0px -5px 1px #234d8e, 6px 7px 3px rgba(66, 66, 66, 0.5);
+}
+
+header h1 {
+  font-family: rubik;
+  font-weight: 800;
+  user-select: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.playerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4385ef;
+  margin-right: 30px;
+  width: 270px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#playerHeaderText {
+  width: 100%;
+  background-color: #f7ff66;
+  padding: 15px;
+  font-weight: 600;
+  color: #383838;
+  font-size: 22px;
+}
+
+.playerContainerButtons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  user-select: none;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  margin: 10px;
+  transform: scaleX(-1);
+}
+
+.comContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4385ef;
+  margin-left: 30px;
+  width: 270px;
+}
+
+#comHeaderText {
+  width: 100%;
+  background-color: #f7ff66;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #383838;
+  font-size: 21px;
+}
+
+.comContainerButtons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.comContainer > img {
+  pointer-events: none;
+}
+.scoreboardContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.scoreContainer {
+  display: flex;
+  align-items: center;
+  background-color: #4385ef;
+  border-radius: 10px;
+  box-shadow: inset 0px -5px 1px #234d8e, 6px 7px 3px rgba(66, 66, 66, 0.5);
+}
+
+.btn {
+  width: 90px;
+  cursor: default;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 90px;
+  font-family: rubik;
+  text-shadow: 3px 3px 5px;
+}
+#showPlayerScore {
+  background-color: #e85c5c;
+  box-shadow: inset 0 -5px 1px #842f2f, 6px 7px 3px rgba(66, 66, 66, 0.5);
+}
+#showComScore {
+  background-color: #60e85c;
+  box-shadow: inset 0 -5px 1px #37842f, 6px 7px 3px rgba(66, 66, 66, 0.5);
+}
+.btncontainer {
+  display: inline-block;
+  margin: 10px 35px 20px 35px;
+  text-align: center;
+}
+.btncontainer h2 {
+  font-family: rubik;
+  font-size: 20px;
+  background-color: #f7ff66;
+  color: #383838;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 10px 15px 15px 15px;
+  box-shadow: inset 0 -5px 1px #5a5e11, 6px 7px 3px rgba(66, 66, 66, 0.5);
+}
+
+#roundDisplay {
+  background-color: #383838;
+  text-align: center;
+  border-radius: 10px;
+  width: 80px;
+  padding: 15px 10px 10px 10px;
+}
+
+#roundDisplay p {
+  color: #ddd;
+  font-family: rubik;
+}
+#roundDisplay p:nth-child(2) {
+  font-size: 40px;
+}
+#roundCounter {
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+#gameLog {
+  width: 300px;
+  height: 100px;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 22px;
+}
+
+#resetBtn {
+  border: none;
+  border-radius: 3px;
+  background-color: #4385ef;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 12px 45px;
+  width: 80%;
+  color: #fff;
+  margin: auto;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 815px) {
+  header {
+    padding: 4px;
+
+    width: 95%;
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .content {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .playerContainer {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .playerHeaderText {
+    font-size: 18px;
+  }
+
+  .playerContainerButtons {
+    flex-direction: row;
+  }
+  
+  .comContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #comHeaderText {
+    font-size: 18px;
+  }
+
+  .comContainerButtons {
+    flex-direction: row;
+  }
+
+  .btn {
+    width: 60px;
+    font-size: 60px;
+  }
+
+  #gameLog {
+    width: 100%;
+    height: 60px;
+    align-self: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  #resetBtn {
+    margin-top: 30px;
+  }
+
+  .scoreboardContainer {
+    align-self: center;
+  }
+
+  .scoreContainer {
+    width: 100%;
+    margin: auto;
+  }
+}
