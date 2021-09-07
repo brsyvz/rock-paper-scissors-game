@@ -1,1 +1,1 @@
-# rock-paper-scissors-game
+Live: https://brsyvz.github.io/rock-paper-scissors-game/
