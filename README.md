@@ -17,20 +17,23 @@ If you reach a score "5" you will win the game and the same counts for the compu
 <br>
 <h2 id="gl">Game Logic</h2>
 
-#### Pseudocode:
 
-1 - listen for click event on rock, paper, scissors icons.
+<img src="https://user-images.githubusercontent.com/55483569/132996075-3fde8803-45ea-49c2-9ed4-3ec11d99d36e.png">
+
+<br>
+
+### Pseudocode:
+
+1 - Listen for click event on rock, paper, scissors icons.
 
 1.1 - If the player clicks on any icons, get player's selection and assign it into a variable and call the "play" function.
   
-1.2 - "play" function calls playRound function and checks if there is a winner.
+1.2 - The "play" function calls playRound function and checks if there is a winner.
   
 1.3 - PlayRound function takes playerSelection and computerSelection to check which selection wins over other by using condition statements and increases player or computer score by one. Example: if(playerSelection === "paper" && computerSelection === "rock"); --> playerScore += 1;
   
 2 - The game repeats the steps above until one side gets 5 points.
 
-<br>
-<img src="https://user-images.githubusercontent.com/55483569/132996075-3fde8803-45ea-49c2-9ed4-3ec11d99d36e.png">
 
 <h2 id="la">Learning Outcomes</h2>
 
