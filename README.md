@@ -13,21 +13,21 @@ Live: https://brsyvz.github.io/rock-paper-scissors-game/
 - In this game, you will be trying to beat a computer that makes a random pick.
 
 - After clicking any of the circle images from the left side (player side), the game starts.
-If you reach score "5" you will win the game and the same counts for the computer side.
+If you reach a score "5" you will win the game and the same counts for the computer side.
 <br>
 <h2 id="gl">Game Logic</h2>
 
 #### Pseudocode:
 
-1 - listen for click on rock, paper, scissors icons.
+1 - listen for click event on rock, paper, scissors icons.
 
-1.1 - if user clicks on any icons, get player's selection and assign it into a variable and call the "play" function.
+1.1 - If the player clicks on any icons, get player's selection and assign it into a variable and call the "play" function.
   
 1.2 - "play" function calls playRound function and checks if there is a winner.
   
-1.3 - playRound function takes playerSelection and computerSelection to check which selection wins over other by using condition statements and increases player or computer score by one. Example: if(playerSelection === "paper" && computerSelection === "rock"); --> playerScore += 1;
+1.3 - PlayRound function takes playerSelection and computerSelection to check which selection wins over other by using condition statements and increases player or computer score by one. Example: if(playerSelection === "paper" && computerSelection === "rock"); --> playerScore += 1;
   
-2 - the game repeats the steps above until one side get 5 points.
+2 - The game repeats the steps above until one side gets 5 points.
 
 <br>
 <img src="https://user-images.githubusercontent.com/55483569/132996075-3fde8803-45ea-49c2-9ed4-3ec11d99d36e.png">
@@ -39,7 +39,7 @@ If you reach score "5" you will win the game and the same counts for the compute
 - Using functions
 - Calling function inside other function
 - Assigning function call to the variable.
-- Passing variables as function parameter.
+- Passing variables as a function parameter.
 - Using of Math.random method on an array
 - using setTimeout method.
 - Manipulating HTML element's content and styles by using conditions.
