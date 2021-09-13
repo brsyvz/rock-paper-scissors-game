@@ -8,7 +8,7 @@ Live: https://brsyvz.github.io/rock-paper-scissors-game/
 <img src="https://user-images.githubusercontent.com/55483569/132996070-2395a763-39b0-40e3-9f32-0e233ddcfda3.png">
 <h2 id="about">About</h2>
 
-- This project is an implementation of a classic game known as "Rock Paper Scissors".
+- This project is an implementation of a classic game known as [Rock paper scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors). 
 
 - In this game, you will be trying to beat a computer that makes a random pick.
 
@@ -24,15 +24,15 @@ If you reach a score "5" you will win the game and the same counts for the compu
 
 ### Pseudocode:
 
-1 - Listen for click event on rock, paper, scissors icons.
++ 1 - Listen for click event on rock, paper, scissors icons.
 
-1.1 - If the player clicks on any icons, get player's selection and assign it into a variable and call the "play" function.
+    + 1.1 - If the player clicks on any icons, get player's selection and assign it into a variable and call the "play" function.
   
-1.2 - The "play" function calls playRound function and checks if there is a winner.
+    + 1.2 - The "play" function calls playRound function and checks if there is a winner.
   
-1.3 - PlayRound function takes playerSelection and computerSelection to check which selection wins over other by using condition statements and increases player or computer score by one. Example: if(playerSelection === "paper" && computerSelection === "rock"); --> playerScore += 1;
+    + 1.3 - PlayRound function takes playerSelection and computerSelection to check which selection wins over other by using condition statements and increases player or computer score by one. Example: if(playerSelection === "paper" && computerSelection === "rock"); --> playerScore += 1;
   
-2 - The game repeats the steps above until one side gets 5 points.
++ 2 - The game repeats the steps above until one side gets 5 points.
 
 
 <h2 id="la">Learning Outcomes</h2>
